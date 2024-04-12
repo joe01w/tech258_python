@@ -1,7 +1,8 @@
 # Task 1: Create a program that checks if a user can watch a movie based on the users age.
 
-# possible film ratings are "universal", "pg", "12", "12a", "15", "18"
-film_rating = "12a"
+# Possible film ratings are universal, pg, 12, 12a, 15, 18
+# The film rating needs to be entered below.
+film_rating = "18"
 
 # use an if statement to check for "universal" rating
 if film_rating == "universal":

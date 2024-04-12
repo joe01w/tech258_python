@@ -61,6 +61,9 @@ Pip is the standard package manager for Python. <br> It allows you to install an
 <br> **Examples of packages are:**
 * PyTorch
 * TensorFlow
+* NumPy
+
+<img alt="NumPy_logo" height="100" src="https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png" width="100"/>
 
 ## **What is scripting?**
 Scripting is code used to automate processes. Scripting is used on existing programs, such as Terraform, Cloud Providers, etc.
@@ -72,40 +75,39 @@ Scripts usually complete a simple task, while programs have a much wider scope.
 * sys: Contains system-specific parameters and functions, such as access to command-line arguments, Python interpreter settings, and standard I/O streams.
 * math: Offers mathematical functions and constants for numerical calculations, including trigonometric functions, logarithms, and constants like Pi and e.
 
-<img alt="NumPy_logo" height="200" src="https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png" width="200"/>
-
 ## Task 1: If Statements
 
 ### Create a program that checks if a user can watch a movie based on the users age.
 
-Possible film ratings are "universal", "pg", "12", "12a", "15", "18"
+#### Possible film ratings are universal, pg, 12, 12a, 15, 18
+The film rating needs to be entered below.
 <br> `film_rating = "12a"`
 
-Use an if statement to check for "universal" rating
+Use an if statement to check for universal rating
 <br> `if film_rating == "universal":`
 <br>`print("all age groups can watch this film")`
 
-Checks if the film rating is "pg"
+Checks if the film rating is pg
 <br>`elif film_rating == "pg":`
 <br>`print("General viewing, but some scenes may be unsuitable for young children.")`
 
-Checks if the film rating is "12" or "12a"
+Checks if the film rating is 12 or 12a
 <br>`elif film_rating == "12" or film_rating == "12a":`
 <br>`print("Films classified 12A and video works classified 12 contain material that is not generally suitable for children aged under 12. No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult.")`
 
-Checks if the film rating is "15"
+Checks if the film rating is 15
 <br>`elif film_rating == "15":`
-<br>`print("No one younger than 15 may see a 15 film in a cinema.")`
+<br>`print("No one younger than 15 may see this film.")`
 
-Checks if the film rating is "18"
+Checks if the film rating is 18
 <br>`elif film_rating == "18":`
-<br>`print("No one younger than 18 may see an 18 film in a cinema.")`
+<br>`print("No one younger than 18 may see this film.")`
 
 Else statement if none of the above conditions are met
 <br>`else:`
-<br>`print("This is not a correct rating, please use universal, pg, 12, 12a, 15, 18")`
+<br>`print("This is not a correct rating, please use a standard rating.")`
 
-## Task 2: Loops
+# Task 2: Loops
 
 Loops allow you to execute a block of code repeatedly based on a certain condition or for a specified number of times. 
 They are essential for automating repetitive tasks and iterating over collections of data. 
@@ -121,13 +123,13 @@ There are primarily two types of loops:
 * Keep a program running until a certain condition is met (in the case of while loops).
 * Streamline and automate repetitive tasks.
 
-#### Example of a for loop iterating over a list of numbers
+#### Example of a for loop iterating over a list of numbers:
 `numbers = [1, 2, 3, 4, 5]`
 
 `for num in numbers:`
 <br>`print(num)`
 
-### While Loops
+## While Loops
 
 While Loops are useful when the total number of iterations isn't predetermined or when you require executing a block of code repeatedly until a specific condition is fulfilled. 
 For instance, they're suitable for scenarios like awaiting user input for a particular value or processing data until a specific condition is met.
