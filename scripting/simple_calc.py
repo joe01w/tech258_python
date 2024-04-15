@@ -2,6 +2,8 @@
 
 # import math_operators
 from math_operators import add, minus, multiply, divide
+# can also use from math_operators import *
+# this covers the whole file
 
 
 def calculator():
@@ -22,3 +24,13 @@ def calculator():
         print("Error")
 
 calculator()
+
+
+# A package is multiple modules bundled into one.
+
+# Library = catch all term. Tends to be used for large packages.
+
+
+
+
+
