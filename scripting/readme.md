@@ -79,4 +79,6 @@ This package lets us access the date and time in realtime.
 * Scripts to automate data backups 
 * Scripts to query a database
 * Scripts for the deployment process of applications
+* Scripts to fetch IP addresses
+* Scripts to generate passwords
 
