@@ -60,7 +60,7 @@ print(f"Today's date is: {datetime.datetime.today()}")
 
 # requests demo
 
-request_bbc = requests.get("https://www.bbc.co.uk/")
-print(request_bbc.status_code) # 200 --> Okay
-print(request_bbc.content) # print out the raw html of the bbc website
+# request_bbc = requests.get("https://www.bbc.co.uk/")
+# print(request_bbc.status_code) # 200 --> Okay
+# print(request_bbc.content) # print out the raw html of the bbc website
 
