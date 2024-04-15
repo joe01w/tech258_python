@@ -72,3 +72,11 @@ This package lets us access the date and time in realtime.
 #### *Below is an image which shows what my run terminal looks like after inputting a few commands from above:* 
 ![screenshot_of_terminal_scripting.png](screenshot_of_terminal_scripting.png)
 
+## What Python Scripts would a DevOps engineer use/create
+
+* Scripts for monitoring system health and performance metrics using monitoring tools' APIs (Application programming interface)
+* General workflow scripts, to automate routine operation tasks
+* Scripts to automate data backups 
+* Scripts to query a database
+* Scripts for the deployment process of applications
+
