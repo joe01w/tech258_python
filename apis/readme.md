@@ -99,7 +99,7 @@ The five primary HTTP verbs, also known as HTTP methods, are:
 * **DELETE:** Removes a specified resource from the server.
 * **PATCH:** Applies partial modifications to a resource.
 
-### What is "statelessness"? Show some examples of "stateless" http requests and then a few "stateful" http requests.
+### What is "statelessness"?
 
 **Statelessness -** This means that every request from a client to a server must include all the information required for understanding and satisfying the request. 
 The server doesn't need to store any data regarding the client's past interactions between requests.
