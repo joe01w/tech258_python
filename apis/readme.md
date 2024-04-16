@@ -104,7 +104,51 @@ The five primary HTTP verbs, also known as HTTP methods, are:
 **Statelessness -** This means that every request from a client to a server must include all the information required for understanding and satisfying the request. 
 The server doesn't need to store any data regarding the client's past interactions between requests.
 
+### Example of stateless HTTP request:
+
+**GET Request for a Web Page:**
+
+- The client sends a GET request to fetch a web page.
+- The server replies with the requested page.
+- Each request is self-contained, containing all necessary information for the server to respond.
+
+```
+GET /homepage HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+```
+
+### Example of stateful HTTP request:
+
+**Login Request:**
+
+* The client sends a POST request to log in.
+* The server verifies credentials and establishes a session.
+* Subsequent requests may include session tokens to maintain authentication.
+
+```
+POST /login HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=myusername&password=mypassword
+```
+
 ### What is caching?
+
+Caching is the process of storing frequently accessed data in a temporary storage location, known as a cache. 
+It's done to reduce latency, improve performance, and minimize the need to access the original data source. 
+This occurs at various levels, such as browser cache, proxy servers, application-level cache, and database cache.
+
+
+
+
+
 
 
 
