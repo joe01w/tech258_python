@@ -26,16 +26,16 @@ if len(sys.argv) > 1: # do we have more than 1 argument?
         file = open(sys.argv[1], "r")
         json.load(file)
         file.close()
-        print("JSON is valid!")
+        print("JSON is valid! Now the file will be converted.")
         with open(sys.argv[1], 'r') as file:
             configuration = json.load(file)
     else:
         print(sys.argv[1] + "not found")
 else:
-    print("Usage: python check_json.py <file>")
+    print("Usage: python json_2_yaml.py <file>")
 
-with open('output.yaml', 'w') as yaml_file:
+with open(sys.argv[2], "w") as yaml_file:
     yaml.dump(configuration, yaml_file)
 
-with open('output.yaml', 'r') as yaml_file:
+with open(sys.argv[2], 'r') as yaml_file:
     print(yaml_file.read())
