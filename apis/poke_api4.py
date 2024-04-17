@@ -1,5 +1,6 @@
 import requests
 import random
+import time
 
 def get_pokemon():
     # Get user input for a Pokémon name
@@ -15,6 +16,15 @@ def get_pokemon():
     else:
         print("Error:", response.status_code)
         return None
+
+def get_random_pokemon():
+    pokemon_id = random.randint(1, 1025)
+    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_id}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print("Failed to retrieve Pokémon data.")
 
 def display_pokemon_info(pokemon):
     if pokemon:
@@ -49,12 +59,18 @@ def battle(player_pokemon, cpu_pokemon):
 
 def main():
     player_pokemon = get_pokemon()
-    cpu_pokemon = get_pokemon()
+    cpu_pokemon = get_random_pokemon()
 
     print("Your Pokémon:")
     display_pokemon_info(player_pokemon)
+    time.sleep(2)
     print("\nCPU's Pokémon:")
     display_pokemon_info(cpu_pokemon)
+
+    time.sleep(1)
+
+    print("The battle will begin in 5 seconds!")
+    time.sleep(5)
 
     print("\nLet the battle begin!")
     battle(player_pokemon, cpu_pokemon)
