@@ -47,6 +47,7 @@ def battle(player_pokemon, cpu_pokemon):
             cpu_hp -= player_attack
             print("Player HP:", player_hp)
             print("CPU HP:", cpu_hp)
+            time.sleep(0.5)
 
         if player_hp <= 0 and cpu_hp <= 0:
             print("It's a draw!")
@@ -59,6 +60,7 @@ def battle(player_pokemon, cpu_pokemon):
 
 def main():
     player_pokemon = get_pokemon()
+    time.sleep(2)
     cpu_pokemon = get_random_pokemon()
 
     print("Your Pokémon:")
